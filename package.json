@@ -4,5 +4,8 @@
   },
   "devDependencies": {
     "five-server": "^0.3.3"
+  },
+  "dependencies": {
+    "degit": "^2.8.4"
   }
 }
