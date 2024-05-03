@@ -4,6 +4,15 @@
   --container-size: 940px;
 }
 
+/* 버튼 스타일 */
+button, a {
+  display: inline-block;
+  width: 100px;
+  padding: 20px;
+  border: 1px solid currentColor;
+  border-radius: 10px;
+}
+
 /* body {
   font-family: "SUIT Variable", sans-serif;
   background-color: yellow;
@@ -27,6 +36,7 @@ body {
 .header {
   background-color: yellow;
   height: 10vh;
+  padding: 0 50px;
 }
 /* 비주얼 */
 .visual {
