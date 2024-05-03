@@ -11,6 +11,18 @@
 - 변수 (Custom Property)
 - 플렉스 박스 기초
 
+### 5월 3일
+
+- box-sizing
+- flex container / flex items 속성
+- justify-content 속성
+- order 속성
+- float / clear
+- display : flow-root
+- 레이아웃을 위해 margin 활용
+- 구조 선택자
+- float 요소 안에서 float 요소로 정의하기
+
 <!-- ###### EUID ╳ Likelion
 
 # 웹카페(Basic)
