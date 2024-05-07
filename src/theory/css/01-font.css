@@ -1,0 +1,39 @@
+/* 단위 */
+/* 절대단위 - px */
+/* 상대단위 - em, rem, %, vw, cqw, ... */
+
+html {
+  font-size: 10px;
+}
+
+/* body {
+  font-family: ;
+} */
+
+h1 {
+  /* font-family: ;
+  line-height: 1;
+  font-size: 60px;
+  font-weight: 900;
+  font-style: italic;
+  font-variant: small-caps; */
+  font: bold italic small-caps 60px /1 "protandard"
+}
+
+div {
+  font-size: 1.5em;
+}
+
+/* 기본 = 상속된 글자크기 */
+p {
+  font-size: 2em;
+  line-height: 100%;
+}
+/* 상속된 글자크기에 비례함 = 상속된 글자크기 * em */
+
+/* viewport 크기를 기준으로 폰트 사이즈를 설정 */
+@media (max-width: 767px) {
+  p {
+    font-size: 3vw;
+  }
+}
