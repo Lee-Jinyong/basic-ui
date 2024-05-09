@@ -2,10 +2,7 @@
   "scripts": {
     "dev": "five-server"
   },
-  "devDependencies": {
-    "five-server": "^0.3.3"
-  },
   "dependencies": {
-    "degit": "^2.8.4"
+    "five-server": "^0.3.3"
   }
 }
