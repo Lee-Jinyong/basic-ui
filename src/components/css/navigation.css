@@ -6,17 +6,28 @@ body {
   margin: 50px;
 }
 
+.header {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+}
+
 .menu {
   background: orangered linear-gradient(to bottom, var(--orange-100), var(--orange-200), var(--orange-100));
-  box-shadow: 0 -5px 0 0 #181818;
+  box-shadow: 0 -5px 0 0 #121212;
   color: #000;
   display: flow-root;
   padding-left: 225px;
   padding-inline-start: 225px;
-
+  
   > li {
     float: left;
     border-left: 2px solid #fff;
+    position: relative;
   }
 
   .is--active {
@@ -34,7 +45,7 @@ body {
     }
 
     ul {
-      /* display: block; */
+      display: block;
     }
   }
 
@@ -62,6 +73,16 @@ body {
   ul {
     display: none;
     position: absolute;
+    top: 60px;
+    inset-block-start: 60px;
+    left: 0;
+    inset-inline-start: 0;
+    background: pink;
+    white-space: nowrap;
+
+    li {
+      display: inline-block;
+    }
   }
 
   /* ul[aria-hidden="false"] {
