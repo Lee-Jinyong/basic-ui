@@ -2,16 +2,24 @@
 @import url(/style/theme.css);
 @import url(/style/base.css);
 
-bodt, h1 {
+body, h1 {
   margin: 20px;
 }
 
 
 
 .tabs{
-  background: yellow;
+  /* background: yellow; */
   width: 50%;
   inline-size: 50%;
+  position: relative;
+
+  /* &:has(.is-selected) {
+    .tab-panel {
+      background-color: blue;
+    }
+  } */
+}
 
 /* 탭 컴포넌트 */
 .tab{
@@ -36,10 +44,17 @@ bodt, h1 {
 
 /* 탭 패널, 탭 패널 아이템 */
 .tab-panel {
-  background: pink;
-  display: flex;
+  padding-top: 1.5rem;
+  padding-block-start: 1.5rem;
+  /* background: pink; */
+  display: none;
+  /* display: flex; */
   flex-flow: column nowrap;
   row-gap: 0.5rem;
+
+  &.is-selected {
+    display: flex;
+  }
   
   .tab-panel-item {
     display: flex;
@@ -52,7 +67,7 @@ bodt, h1 {
       /* display: flex;
       flex-flow: row nowrap; */
       /* gap: 0.5rem; */
-      background: lime;
+      /* background: lime; */
       flex: 1 1 auto;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -62,5 +77,13 @@ bodt, h1 {
     span {
       flex: 0 0 auto;
     }
+  }
+
+  .tab-more {
+    position: absolute;
+    top: 0;
+    inset-block-start: 0;
+    right: 0;
+    inset-inline-end: 0;
   }
 }
