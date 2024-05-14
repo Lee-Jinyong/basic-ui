@@ -1,0 +1,38 @@
+/* @import url(/style/reset.css);
+@import url(/style/theme.css);
+@import url(/style/base.css); */
+
+@import url(default.css);
+
+
+body {
+  margin: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  gap: 10px;
+
+  div:nth-child(odd) {
+    grid-column: span 2;
+  }
+
+  div:nth-child(even) {
+    grid-row: span 2;
+  }
+
+
+  img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 50%;
+
+    &:hover{
+      scale: 1.5;
+    }
+  }
+}
