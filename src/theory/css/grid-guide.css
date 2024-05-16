@@ -1,13 +1,7 @@
-/* @import url(/style/reset.css);
-@import url(/style/theme.css);
-@import url(/style/base.css); */
-
-@import url(default.css);
-
 :root{
-  --min-container-size: 320px;
-  --max-container-size: 1200px;
-  --spacing: 24px;
+  /* --min-container-size: 320px; */
+  /* --max-container-size: 1200px; */
+  /* --spacing: 24px; */
 }
 
 body {
