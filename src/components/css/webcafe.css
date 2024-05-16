@@ -2,6 +2,11 @@
 @import url(/style/base.css);
 @import url(/theory/css/grid.css);
 
+/* 임시 레이아웃 */
+body {
+  margin-top: 50px;
+}
+
 /* 웹카페 반응형 레이아웃 */
 .container{
   min-height: 100vh;
@@ -25,13 +30,20 @@
   }
 }
 
+.header{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+}
+
 /* 햄버거 버튼 */
 .burger-button {
+  margin: 100px;
   background: red;
   border: 0;
   padding: 0;
-  width: 24px;
-  height: 24px;
+  width: 100px;
+  height: 100px;
   position: relative;
 
   span {
@@ -41,6 +53,7 @@
     background-color: #fff;
     left: 0;
     border-radius: 20px;
+    transition: all 200ms;
   }
 
   .burger-bar-top {
@@ -58,6 +71,33 @@
   }
 }
 
+/* is0active 클래스가 있을 때 */
+.burger-button.is-active {
+  overflow: hidden;
+
+  span {
+
+  }
+
+  .burger-bar-top, .burger-bar-bottom {
+    top: 50%;
+    translate: 0 -50%;
+  }
+
+  .burger-bar-top {
+    rotate: 45deg;
+  }
+
+  .burger-bar-middle {
+    /* transform: translateX(-100%); */
+    translate: -100% -50%;
+  }
+
+  .burger-bar-bottom {
+    rotate: -45deg;
+  }
+}
+
 /* transition - 애니메이션 */
 /* 내비게이션 */
 .menu {
@@ -72,7 +112,7 @@
   transition-duration: 2000ms, 2000ms;
   transition-delay: 0ms, 2000ms;
   transition-timing-function: ease-in-out, ease-in-out; */
-  transition: translate 2000ms 0ms ease-in-out, background 2000ms 2000ms ease-in-out;
+  transition: translate 200ms 0ms ease-in-out, background 200ms 200ms ease-in-out;
 
   &.is-active {
     translate: 0 0;
